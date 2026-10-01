@@ -1,333 +1,1164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Study Your Towns | Collingswood, Oaklyn & Woodlynne</title>
+<title>Study Your Towns | Collingswood, Oaklyn & Woodlynne</title>
 
-  <meta name="description"
-        content="A resident-led effort to study whether consolidation of Collingswood, Oaklyn and Woodlynne could reduce taxes, strengthen schools and simplify local government.">
+<meta name="description" content="Learn about a resident-led proposal to study possible municipal consolidation involving Collingswood, Oaklyn and Woodlynne, New Jersey.">
 
-  <style>
-    :root {
-      --navy: #17324d;
-      --blue: #245b82;
-      --light-blue: #eaf3f8;
-      --green: #3f7254;
-      --light-green: #edf5ef;
-      --text: #252525;
-      --muted: #626262;
-      --background: #ffffff;
-      --light: #f6f7f8;
-      --border: #d9dee2;
-    }
+<style>
+:root {
+  --navy:#09264b;
+  --blue:#17649a;
+  --yellow:#f2ad00;
+  --red:#c9253b;
+  --green:#19713d;
+  --light-blue:#eaf7ff;
+  --light:#f7fafc;
+  --border:#dce6ed;
+  --text:#14283e;
+  --muted:#5c6d7d;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+* {
+  box-sizing:border-box;
+}
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                   Helvetica, Arial, sans-serif;
-      color: var(--text);
-      background: var(--background);
-      line-height: 1.6;
-    }
+html {
+  scroll-behavior:smooth;
+}
 
-    header {
-      background: var(--navy);
-      color: white;
-      padding: 18px 20px;
-    }
+body {
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);
+  background:white;
+  line-height:1.55;
+}
 
-    nav {
-      max-width: 1000px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
+/* HEADER */
 
-    .brand {
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
+header {
+  background:white;
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: .95rem;
-    }
+nav {
+  max-width:1200px;
+  margin:auto;
+  padding:14px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
 
-    .hero {
-      padding: 80px 20px;
-      text-align: center;
-      background: linear-gradient(180deg, var(--light-blue), white);
-    }
+.brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:var(--navy);
+  font-weight:800;
+  font-size:1.45rem;
+  white-space:nowrap;
+}
 
-    .hero-inner {
-      max-width: 850px;
-      margin: auto;
-    }
+.brand-houses {
+  display:flex;
+  gap:4px;
+  align-items:flex-end;
+}
 
-    h1 {
-      color: var(--navy);
-      font-size: clamp(2.2rem, 6vw, 4rem);
-      line-height: 1.1;
-      margin: 0 0 20px;
-    }
+.tiny-house {
+  width:22px;
+  height:20px;
+  position:relative;
+}
 
-    .hero p {
-      font-size: 1.3rem;
-      color: var(--muted);
-      max-width: 750px;
-      margin: auto;
-    }
+.tiny-house:before {
+  content:"";
+  position:absolute;
+  width:16px;
+  height:16px;
+  bottom:0;
+  left:3px;
+  background:currentColor;
+}
 
-    .important {
-      max-width: 760px;
-      margin: 35px auto 0;
-      padding: 22px;
-      background: white;
-      border-left: 5px solid var(--green);
-      box-shadow: 0 3px 15px rgba(0,0,0,.07);
-      text-align: left;
-    }
+.tiny-house:after {
+  content:"";
+  position:absolute;
+  width:15px;
+  height:15px;
+  left:3.5px;
+  top:-5px;
+  background:currentColor;
+  transform:rotate(45deg);
+}
 
-    section {
-      padding: 65px 20px;
-    }
+.tiny-house:nth-child(1){color:var(--blue);}
+.tiny-house:nth-child(2){color:var(--yellow);}
+.tiny-house:nth-child(3){color:var(--red);}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-    }
+.navlinks {
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
 
-    h2 {
-      color: var(--navy);
-      font-size: 2rem;
-      margin-top: 0;
-    }
+.navlinks a {
+  text-decoration:none;
+  color:var(--navy);
+  font-weight:600;
+  font-size:.94rem;
+}
 
-    h3 {
-      color: var(--navy);
-    }
+.navlinks a:hover {
+  color:var(--blue);
+}
 
-    .intro {
-      font-size: 1.15rem;
-      max-width: 800px;
-    }
+.nav-button {
+  background:#ffd538;
+  padding:10px 20px;
+  border-radius:12px;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-top: 35px;
-    }
+/* HERO */
 
-    .card {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 25px;
-      background: white;
-    }
+.hero {
+  background:
+    linear-gradient(180deg,#dff4ff 0%,#eef9ff 60%,#e4f2df 100%);
+  padding:40px 20px 48px;
+  overflow:hidden;
+}
 
-    .card h3 {
-      margin-top: 0;
-    }
+.hero-inner {
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
 
-    .alt {
-      background: var(--light);
-    }
+.hero h1 {
+  margin:0;
+  font-size:clamp(2.4rem,6vw,4.4rem);
+  line-height:1.05;
+  color:var(--navy);
+  letter-spacing:-2px;
+}
 
-    .steps {
-      counter-reset: steps;
-      max-width: 800px;
-      margin-top: 30px;
-    }
+.hero-subtitle {
+  font-size:clamp(1.15rem,3vw,1.75rem);
+  font-weight:700;
+  margin:10px 0 15px;
+  color:var(--navy);
+}
 
-    .step {
-      position: relative;
-      padding: 0 0 30px 55px;
-    }
+.study-banner {
+  display:inline-block;
+  background:#ffd633;
+  color:#101820;
+  font-weight:800;
+  font-size:clamp(1rem,2.5vw,1.35rem);
+  padding:8px 24px;
+  border-radius:9px;
+  margin-bottom:12px;
+}
 
-    .step::before {
-      counter-increment: steps;
-      content: counter(steps);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      background: var(--navy);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-    }
+.hero-description {
+  max-width:800px;
+  margin:0 auto 32px;
+  font-size:1.05rem;
+}
 
-    .callout {
-      background: var(--light-green);
-      border-radius: 10px;
-      padding: 30px;
-      margin-top: 35px;
-    }
+/* COMMUNITY GRAPHIC */
 
-    .quote {
-      font-size: 1.4rem;
-      color: var(--navy);
-      font-weight: 600;
-      text-align: center;
-      margin: 45px auto;
-      max-width: 750px;
-    }
+.community-graphic {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  margin:30px auto 10px;
+}
 
-    .sources a {
-      color: var(--blue);
-    }
+.town {
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border:3px solid rgba(255,255,255,.9);
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
 
-    footer {
-      background: var(--navy);
-      color: white;
-      padding: 35px 20px;
-      text-align: center;
-    }
+.collingswood {background:var(--blue);}
+.oaklyn {background:var(--yellow);}
+.woodlynne {background:var(--red);}
+.community {background:var(--green);}
 
-    footer p {
-      max-width: 800px;
-      margin: 8px auto;
-      opacity: .9;
-      font-size: .9rem;
-    }
+.house-icon {
+  position:relative;
+  width:54px;
+  height:43px;
+  background:white;
+  margin-bottom:14px;
+}
 
-    @media (max-width: 750px) {
-      .cards {
-        grid-template-columns: 1fr;
-      }
+.house-icon:before {
+  content:"";
+  position:absolute;
+  width:40px;
+  height:40px;
+  background:white;
+  transform:rotate(45deg);
+  top:-20px;
+  left:7px;
+}
 
-      nav .links {
-        display: none;
-      }
+.house-icon:after {
+  content:"";
+  position:absolute;
+  width:12px;
+  height:20px;
+  background:rgba(0,0,0,.12);
+  bottom:0;
+  left:21px;
+}
 
-      .hero {
-        padding: 55px 20px;
-      }
-    }
-  </style>
+.town-name {
+  font-weight:800;
+  font-size:1.12rem;
+  z-index:2;
+}
+
+.plus {
+  font-size:2.7rem;
+  font-weight:800;
+  color:var(--navy);
+}
+
+.arrow {
+  font-size:4rem;
+  color:var(--navy);
+  font-weight:900;
+}
+
+.community .houses {
+  display:flex;
+  gap:8px;
+  margin-bottom:15px;
+}
+
+.community .house-icon {
+  width:36px;
+  height:30px;
+  margin:0;
+}
+
+.community .house-icon:before {
+  width:27px;
+  height:27px;
+  left:4px;
+  top:-13px;
+}
+
+.community .house-icon:after {
+  width:8px;
+  height:14px;
+  left:14px;
+}
+
+/* QUICK LINKS */
+
+.quicklinks {
+  background:white;
+  border-bottom:1px solid var(--border);
+}
+
+.quick-grid {
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+}
+
+.quick {
+  padding:20px 14px;
+  text-align:center;
+  text-decoration:none;
+  color:var(--navy);
+  border-right:1px solid var(--border);
+}
+
+.quick:last-child {
+  border-right:none;
+}
+
+.quick:hover {
+  background:var(--light);
+}
+
+.quick-icon {
+  font-size:1.7rem;
+}
+
+.quick strong {
+  display:block;
+  margin-top:4px;
+}
+
+/* MAIN */
+
+main {
+  max-width:1150px;
+  margin:auto;
+  padding:55px 24px 80px;
+}
+
+.section-title {
+  font-size:2.3rem;
+  color:var(--navy);
+  margin:0 0 8px;
+}
+
+.section-line {
+  width:80px;
+  height:4px;
+  background:var(--green);
+  margin-bottom:15px;
+}
+
+.intro {
+  max-width:800px;
+  color:var(--muted);
+  font-size:1.05rem;
+  margin-bottom:35px;
+}
+
+/* FAQ */
+
+.faq-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px 25px;
+}
+
+details {
+  border:1px solid var(--border);
+  border-radius:9px;
+  background:white;
+  box-shadow:0 2px 6px rgba(0,0,0,.035);
+}
+
+summary {
+  cursor:pointer;
+  padding:16px 18px;
+  font-weight:700;
+  color:var(--navy);
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+}
+
+summary::-webkit-details-marker {
+  display:none;
+}
+
+summary:after {
+  content:"+";
+  font-size:1.4rem;
+}
+
+details[open] summary:after {
+  content:"−";
+}
+
+details[open] summary {
+  border-bottom:1px solid var(--border);
+}
+
+.answer {
+  padding:5px 20px 18px;
+}
+
+.answer a {
+  color:var(--blue);
+}
+
+.answer strong {
+  color:var(--navy);
+}
+
+/* PROCESS */
+
+.process {
+  margin-top:75px;
+  padding-top:20px;
+}
+
+.steps {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  margin-top:30px;
+}
+
+.step {
+  background:var(--light);
+  border-radius:12px;
+  padding:25px;
+}
+
+.step-number {
+  width:42px;
+  height:42px;
+  background:var(--navy);
+  color:white;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+  margin-bottom:15px;
+}
+
+.step h3 {
+  color:var(--navy);
+}
+
+/* CALLOUT */
+
+.callout {
+  background:#eef8f1;
+  border-left:5px solid var(--green);
+  padding:25px 30px;
+  border-radius:8px;
+  margin-top:50px;
+}
+
+.callout h2 {
+  margin-top:0;
+  color:var(--navy);
+}
+
+/* SOURCES */
+
+.sources {
+  margin-top:70px;
+  padding-top:20px;
+}
+
+.source-box {
+  background:var(--light);
+  border:1px solid var(--border);
+  padding:25px;
+  border-radius:10px;
+}
+
+.source-box a {
+  color:var(--blue);
+  font-weight:600;
+}
+
+/* FOOTER */
+
+footer {
+  background:var(--navy);
+  color:white;
+  padding:40px 20px;
+  text-align:center;
+}
+
+footer p {
+  max-width:800px;
+  margin:7px auto;
+  opacity:.9;
+  font-size:.9rem;
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+
+  .navlinks {
+    display:none;
+  }
+
+  .community-graphic {
+    flex-wrap:wrap;
+  }
+
+  .town {
+    width:135px;
+    height:135px;
+  }
+
+  .plus {
+    font-size:2rem;
+  }
+
+  .arrow {
+    width:100%;
+    line-height:1;
+    transform:rotate(90deg);
+  }
+
+  .quick-grid {
+    grid-template-columns:1fr 1fr;
+  }
+
+  .quick {
+    border-bottom:1px solid var(--border);
+  }
+
+  .faq-grid {
+    grid-template-columns:1fr;
+  }
+
+  .steps {
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:550px) {
+
+  .brand {
+    font-size:1.15rem;
+  }
+
+  .hero {
+    padding-top:30px;
+  }
+
+  .community-graphic {
+    gap:10px;
+  }
+
+  .town {
+    width:120px;
+    height:120px;
+  }
+
+  .house-icon {
+    transform:scale(.7);
+    margin-bottom:5px;
+  }
+
+  .town-name {
+    font-size:.9rem;
+  }
+
+  .plus {
+    font-size:1.5rem;
+  }
+
+  .steps {
+    grid-template-columns:1fr;
+  }
+
+  .quick-grid {
+    grid-template-columns:1fr;
+  }
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <nav>
-    <div class="brand">Study Your Towns</div>
+<nav>
 
-    <div class="links">
-      <a href="#why">Why Study?</a>
-      <a href="#process">How It Works</a>
-      <a href="#schools">Schools</a>
-      <a href="#sources">Sources</a>
+  <div class="brand">
+    <div class="brand-houses">
+      <span class="tiny-house"></span>
+      <span class="tiny-house"></span>
+      <span class="tiny-house"></span>
     </div>
-  </nav>
+    Study Your Towns
+  </div>
+
+  <div class="navlinks">
+    <a href="#faqs">FAQs</a>
+    <a href="#process">How It Works</a>
+    <a href="#sources">Sources</a>
+    <a href="#why" class="nav-button">Why Study?</a>
+  </div>
+
+</nav>
 </header>
+
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<h1>Three Towns. One Question.</h1>
+
+<div class="hero-subtitle">
+Could Collingswood, Oaklyn and Woodlynne work better together?
+</div>
+
+<div class="study-banner">
+This is a proposal to study consolidation, not to merge the towns.
+</div>
+
+<p class="hero-description">
+A resident petition can begin a public process to examine whether municipal
+consolidation could affect taxes, schools, services and the structure of local
+government. The purpose of the study is to get the facts before residents are
+asked to make a decision about consolidation.
+</p>
+
+
+<div class="community-graphic">
+
+  <div class="town collingswood">
+    <div class="house-icon"></div>
+    <div class="town-name">Collingswood</div>
+  </div>
+
+  <div class="plus">+</div>
+
+  <div class="town oaklyn">
+    <div class="house-icon"></div>
+    <div class="town-name">Oaklyn</div>
+  </div>
+
+  <div class="plus">+</div>
+
+  <div class="town woodlynne">
+    <div class="house-icon"></div>
+    <div class="town-name">Woodlynne</div>
+  </div>
+
+  <div class="arrow">→</div>
+
+  <div class="town community">
+
+    <div class="houses">
+      <div class="house-icon"></div>
+      <div class="house-icon"></div>
+      <div class="house-icon"></div>
+    </div>
+
+    <div class="town-name">One Community?</div>
+
+  </div>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="quicklinks">
+
+<div class="quick-grid">
+
+<a class="quick" href="#faqs">
+  <div class="quick-icon">?</div>
+  <strong>Read the FAQs</strong>
+  Get the answers
+</a>
+
+<a class="quick" href="#process">
+  <div class="quick-icon">①②③</div>
+  <strong>How It Works</strong>
+  Step by step
+</a>
+
+<a class="quick" href="#taxes">
+  <div class="quick-icon">$</div>
+  <strong>Taxes</strong>
+  What would be studied
+</a>
+
+<a class="quick" href="#schools">
+  <div class="quick-icon">⌂</div>
+  <strong>Schools</strong>
+  Existing connections
+</a>
+
+<a class="quick" href="#sources">
+  <div class="quick-icon">§</div>
+  <strong>NJ Law & Sources</strong>
+  Read it yourself
+</a>
+
+</div>
+</section>
 
 
 <main>
 
-<section class="hero">
-  <div class="hero-inner">
+<section id="faqs">
 
-    <h1>Could Three Towns Work Better as One?</h1>
+<h2 class="section-title">Frequently Asked Questions</h2>
+<div class="section-line"></div>
 
-    <p>
-      Exploring whether consolidation of Collingswood, Oaklyn and Woodlynne
-      could lower taxes, strengthen schools and create a smaller,
-      more efficient local government.
-    </p>
+<p class="intro">
+The central idea is simple: before deciding whether these communities should
+consolidate, residents can ask for a formal study of what consolidation would
+actually mean.
+</p>
 
-    <div class="important">
-      <strong>This is a proposal to study consolidation, not to merge the towns.</strong>
-      A petition would begin a public process to determine whether consolidation
-      actually makes financial, educational and operational sense before residents
-      are asked to make a decision.
-    </div>
 
-  </div>
+<div class="faq-grid">
+
+
+<details open>
+<summary>1. What is this about?</summary>
+<div class="answer">
+<p>
+Study Your Towns is a resident-led effort to explore whether municipal
+consolidation involving Collingswood, Oaklyn and Woodlynne deserves formal
+study.
+</p>
+
+<p>
+The question is whether some of the governmental and school structures
+currently maintained separately could potentially be organized more
+efficiently while maintaining or improving services.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>2. Does signing a petition merge the towns?</summary>
+<div class="answer">
+<p>
+No. The petition itself does not consolidate the municipalities.
+</p>
+
+<p>
+It begins a statutory process through which residents can vote on whether a
+Municipal Consolidation Study Commission should be established.
+</p>
+
+<p>
+The purpose of that commission is to investigate the consequences of
+consolidation before residents are asked to make a final decision.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>3. How does the process work?</summary>
+<div class="answer">
+<p>
+The process begins with petitions signed by registered voters in each
+participating municipality.
+</p>
+
+<p>
+If the statutory petition requirements are satisfied, voters consider whether
+to establish a consolidation study commission. If approved in the participating
+municipalities, the commission conducts a formal analysis and ultimately
+reports its findings and recommendations.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>4. How many petition signatures are needed?</summary>
+<div class="answer">
+<p>
+Under the resident-initiated process described in New Jersey's Municipal
+Consolidation Act, the petition requirement is based on 10% of the votes cast
+in each municipality at the most recent General Assembly election.
+</p>
+
+<p>
+The precise number should be verified with the appropriate election and state
+officials before petitions are circulated.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>5. What would the study examine?</summary>
+<div class="answer">
+<p>A formal study can examine issues including:</p>
+
+<ul>
+<li>municipal and school property taxes</li>
+<li>state aid</li>
+<li>municipal and school debt</li>
+<li>government administration</li>
+<li>schools and educational services</li>
+<li>employees and labor obligations</li>
+<li>public works and other municipal services</li>
+<li>facilities and equipment</li>
+<li>existing shared-service arrangements</li>
+<li>potential costs and savings of consolidation</li>
+</ul>
+
+<p>
+The point is to examine both potential advantages and potential disadvantages.
+</p>
+</div>
+</details>
+
+
+<details id="taxes">
+<summary>6. Could consolidation lower my property taxes?</summary>
+<div class="answer">
+<p>
+Possibly, but that is one of the central questions a formal fiscal analysis
+would need to answer.
+</p>
+
+<p>
+Consolidation could reduce some duplicated administrative expenses. At the
+same time, tax rates could be affected by differences in property values,
+existing debt, school finances, state aid and the costs of combining
+operations.
+</p>
+
+<p>
+A study would allow residents to evaluate those numbers rather than relying
+on assumptions.
+</p>
+</div>
+</details>
+
+
+<details id="schools">
+<summary>7. What about our schools?</summary>
+<div class="answer">
+<p>
+The three communities already have important educational relationships.
+Oaklyn students attend Collingswood beginning in the middle-school grades,
+while Woodlynne students attend Collingswood High School through existing
+sending-receiving arrangements.
+</p>
+
+<p>
+A consolidation study could examine whether a more unified school structure
+would make educational or financial sense, including effects on administration,
+curriculum, staffing, special education, transportation, facilities, state aid
+and school taxes.
+</p>
+
+<p>
+It would also identify potential disadvantages or transition costs.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>8. Would our town identities disappear?</summary>
+<div class="answer">
+<p>
+A governmental consolidation does not automatically erase the history,
+neighborhood identity, traditions or community organizations associated with
+the existing towns.
+</p>
+
+<p>
+How a consolidated municipality would be named and structured would be among
+the issues that would need to be addressed during the process.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>9. Would municipal services be reduced?</summary>
+<div class="answer">
+<p>
+That cannot be determined before the study.
+</p>
+
+<p>
+A consolidation analysis would examine how services are currently delivered,
+what staffing and facilities are required, where duplication exists, and
+whether services could be delivered differently under a consolidated
+government.
+</p>
+
+<p>
+The relevant question is not simply how much government can be eliminated,
+but what structure can provide residents with the appropriate level of service
+at a sustainable cost.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>10. What about police, public works and other departments?</summary>
+<div class="answer">
+<p>
+All major municipal functions would have to be considered as part of a serious
+consolidation study.
+</p>
+
+<p>
+The study would examine staffing, contracts, facilities, equipment, management,
+service levels, costs and transition requirements before recommending any
+particular structure.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>11. How long would this take?</summary>
+<div class="answer">
+<p>
+Municipal consolidation is deliberately a multi-stage process rather than an
+immediate change.
+</p>
+
+<p>
+There is first a petition process, followed by an election on whether to
+establish a study commission. If voters authorize the study, the commission
+then conducts its analysis and prepares findings and recommendations.
+</p>
+
+<p>
+Any eventual consolidation would require additional formal steps after the
+study.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>12. What happens if the study says consolidation is a bad idea?</summary>
+<div class="answer">
+<p>
+That would itself be useful information.
+</p>
+
+<p>
+The purpose of studying consolidation is not to predetermine the result. A
+credible study should identify costs, disadvantages and risks as well as
+potential savings or improvements.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>13. Why these three towns?</summary>
+<div class="answer">
+<p>
+Collingswood, Oaklyn and Woodlynne are neighboring Camden County communities
+with existing connections, including established relationships among their
+school systems.
+</p>
+
+<p>
+Whether those connections are sufficient to make municipal consolidation
+practical is precisely the type of question a formal study could examine.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>14. Does supporting the study mean supporting consolidation?</summary>
+<div class="answer">
+<p>
+No.
+</p>
+
+<p>
+A resident can believe consolidation deserves serious investigation without
+having decided whether consolidation itself is desirable.
+</p>
+
+<p>
+The study process is intended to produce the information needed to make that
+later decision.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>15. Who is behind Study Your Towns?</summary>
+<div class="answer">
+<p>
+Study Your Towns is an independent resident-led project. It is not an official
+project of Collingswood, Oaklyn, Woodlynne, their school districts, Camden
+County or the State of New Jersey.
+</p>
+
+<p>
+Its purpose is to provide information about the consolidation-study process
+and encourage public examination of the issue.
+</p>
+</div>
+</details>
+
+
+<details>
+<summary>16. Where can I read the law myself?</summary>
+<div class="answer">
+<p>
+The New Jersey Department of Community Affairs has published a reference
+document containing the state's municipal consolidation statutes.
+</p>
+
+<p>
+<a href="https://www.nj.gov/dca/dlgs/misc_docs/Reference%20-%20Municipal%20Consolidation%20Statutes%20-%20July%202019.pdf"
+target="_blank" rel="noopener">
+Read the NJ Department of Community Affairs Municipal Consolidation Statutes
+</a>
+</p>
+</div>
+</details>
+
+
+</div>
 </section>
 
 
-<section id="why">
-  <div class="container">
 
-    <h2>Why Study Consolidation?</h2>
+<section class="process" id="process">
 
-    <p class="intro">
-      Collingswood, Oaklyn and Woodlynne are three small neighboring communities
-      with approximately 21,000 residents combined. They already share important
-      connections, particularly through their schools, yet maintain separate
-      municipal governments and school districts.
-    </p>
+<h2 class="section-title">How the Study Process Works</h2>
+<div class="section-line"></div>
 
-    <p>
-      A formal study could determine whether combining some or all of these
-      structures could provide the same or better services at a lower cost.
-    </p>
+<div class="steps">
 
-    <div class="cards">
+<div class="step">
+<div class="step-number">1</div>
+<h3>Petition</h3>
+<p>
+Residents collect the number of valid signatures required by New Jersey law
+in each participating municipality.
+</p>
+</div>
 
-      <div class="card">
-        <h3>Potential Tax Savings</h3>
-        <p>
-          One municipality could potentially reduce duplicated administrative
-          expenses involving finance, tax administration, public works management,
-          legal and professional services, planning, purchasing, IT, insurance,
-          facilities and other governmental functions.
-        </p>
-      </div>
+<div class="step">
+<div class="step-number">2</div>
+<h3>Vote to Study</h3>
+<p>
+If the petitions qualify, residents vote on whether to establish a Municipal
+Consolidation Study Commission.
+</p>
+</div>
 
-      <div class="card">
-        <h3>Stronger Schools</h3>
-        <p>
-          A unified school system could potentially reduce administrative
-          duplication while coordinating curriculum, student services, special
-          education, transportation, facilities and long-term planning.
-        </p>
-      </div>
+<div class="step">
+<div class="step-number">3</div>
+<h3>Study</h3>
+<p>
+The commission examines finances, schools, services, debt, state aid,
+employees, facilities and other consequences of consolidation.
+</p>
+</div>
 
-      <div class="card">
-        <h3>Smaller Government</h3>
-        <p>
-          A study could determine whether approximately 21,000 residents need
-          three separate governmental structures or whether one government could
-          deliver services more efficiently.
-        </p>
-      </div>
+<div class="step">
+<div class="step-number">4</div>
+<h3>Results</h3>
+<p>
+The commission publishes its findings and recommendations so residents can
+evaluate whether consolidation makes sense.
+</p>
+</div>
 
-    </div>
+</div>
 
-  </div>
+
+<div class="callout" id="why">
+
+<h2>Why sign a petition just to study it?</h2>
+
+<p>
+Because the important questions cannot be answered reliably without examining
+the actual numbers.
+</p>
+
+<p>
+Could one municipal government cost less than three? Could school
+administration or facilities be organized differently? How would property
+taxes change in each town? What would happen to state aid and existing debt?
+Would services improve, decline or remain essentially the same?
+</p>
+
+<p>
+A formal study provides a process for answering those questions.
+</p>
+
+<p>
+<strong>
+Signing a study petition is not a vote for consolidation. It is a request to
+find out whether consolidation makes sense.
+</strong>
+</p>
+
+</div>
+
 </section>
 
 
-<section class="alt" id="schools">
-  <div class="container">
 
-    <h2>Our Schools Are Already Connected</h2>
+<section class="sources" id="sources">
 
-    <p class="intro">
-      Consolidation would not be starting from scratch. The communities already
-      have significant educational relationships.
-    </p>
+<h2 class="section-title">NJ Law & Sources</h2>
+<div class="section-line"></div>
 
-    <div class="cards">
+<p class="intro">
+Don't take this website's word for it. Read the underlying state materials and
+reach your own conclusions.
+</p>
 
-      <div class="card">
-        <h3>Collingswood</h3>
-        <p>
-          Operates the middle school and high school
+<div class="source-box">
+
+<h3>New Jersey Department of Community Affairs</h3>
+
+<p>
+Municipal Consolidation Statutes reference document:
+</p>
+
+<p>
+<a href="https://www.nj.gov/dca/dlgs/misc_docs/Reference%20-%20Municipal%20Consolidation%20Statutes%20-%20July%202019.pdf"
+target="_blank" rel="noopener">
+NJ Municipal Consolidation Statutes
+</a>
+</p>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<p><strong>Study Your Towns</strong></p>
+
+<p>
+Exploring the municipal consolidation study process for Collingswood,
+Oaklyn and Woodlynne, New Jersey.
+</p>
+
+<p>
+Independent resident-led project. Not affiliated with the municipalities,
+school districts, Camden County or the State of New Jersey.
+</p>
+
+</footer>
+
+</body>
+</html>
