@@ -22,13 +22,9 @@
   --muted:#5c6d7d;
 }
 
-* {
-  box-sizing:border-box;
-}
+* { box-sizing:border-box; }
 
-html {
-  scroll-behavior:smooth;
-}
+html { scroll-behavior:smooth; }
 
 body {
   margin:0;
@@ -118,9 +114,7 @@ nav {
   font-size:.94rem;
 }
 
-.navlinks a:hover {
-  color:var(--blue);
-}
+.navlinks a:hover { color:var(--blue); }
 
 .nav-button {
   background:#ffd538;
@@ -131,8 +125,7 @@ nav {
 /* HERO */
 
 .hero {
-  background:
-    linear-gradient(180deg,#dff4ff 0%,#eef9ff 60%,#e4f2df 100%);
+  background:linear-gradient(180deg,#dff4ff 0%,#eef9ff 60%,#e4f2df 100%);
   padding:40px 20px 48px;
   overflow:hidden;
 }
@@ -297,17 +290,11 @@ nav {
   border-right:1px solid var(--border);
 }
 
-.quick:last-child {
-  border-right:none;
-}
+.quick:last-child { border-right:none; }
 
-.quick:hover {
-  background:var(--light);
-}
+.quick:hover { background:var(--light); }
 
-.quick-icon {
-  font-size:1.7rem;
-}
+.quick-icon { font-size:1.7rem; }
 
 .quick strong {
   display:block;
@@ -368,18 +355,14 @@ summary {
   gap:15px;
 }
 
-summary::-webkit-details-marker {
-  display:none;
-}
+summary::-webkit-details-marker { display:none; }
 
 summary:after {
   content:"+";
   font-size:1.4rem;
 }
 
-details[open] summary:after {
-  content:"−";
-}
+details[open] summary:after { content:"−"; }
 
 details[open] summary {
   border-bottom:1px solid var(--border);
@@ -389,13 +372,9 @@ details[open] summary {
   padding:5px 20px 18px;
 }
 
-.answer a {
-  color:var(--blue);
-}
+.answer a { color:var(--blue); }
 
-.answer strong {
-  color:var(--navy);
-}
+.answer strong { color:var(--navy); }
 
 /* PROCESS */
 
@@ -406,15 +385,15 @@ details[open] summary {
 
 .steps {
   display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
+  grid-template-columns:repeat(5,1fr);
+  gap:16px;
   margin-top:30px;
 }
 
 .step {
   background:var(--light);
   border-radius:12px;
-  padding:25px;
+  padding:22px;
 }
 
 .step-number {
@@ -430,9 +409,7 @@ details[open] summary {
   margin-bottom:15px;
 }
 
-.step h3 {
-  color:var(--navy);
-}
+.step h3 { color:var(--navy); }
 
 /* CALLOUT */
 
@@ -484,26 +461,31 @@ footer p {
   font-size:.9rem;
 }
 
+footer a {
+  color:white;
+  font-weight:700;
+}
+
 /* MOBILE */
+
+@media(max-width:1000px) {
+  .steps {
+    grid-template-columns:1fr 1fr;
+  }
+}
 
 @media(max-width:900px) {
 
-  .navlinks {
-    display:none;
-  }
+  .navlinks { display:none; }
 
-  .community-graphic {
-    flex-wrap:wrap;
-  }
+  .community-graphic { flex-wrap:wrap; }
 
   .town {
     width:135px;
     height:135px;
   }
 
-  .plus {
-    font-size:2rem;
-  }
+  .plus { font-size:2rem; }
 
   .arrow {
     width:100%;
@@ -511,36 +493,20 @@ footer p {
     transform:rotate(90deg);
   }
 
-  .quick-grid {
-    grid-template-columns:1fr 1fr;
-  }
+  .quick-grid { grid-template-columns:1fr 1fr; }
 
-  .quick {
-    border-bottom:1px solid var(--border);
-  }
+  .quick { border-bottom:1px solid var(--border); }
 
-  .faq-grid {
-    grid-template-columns:1fr;
-  }
-
-  .steps {
-    grid-template-columns:1fr 1fr;
-  }
+  .faq-grid { grid-template-columns:1fr; }
 }
 
 @media(max-width:550px) {
 
-  .brand {
-    font-size:1.15rem;
-  }
+  .brand { font-size:1.15rem; }
 
-  .hero {
-    padding-top:30px;
-  }
+  .hero { padding-top:30px; }
 
-  .community-graphic {
-    gap:10px;
-  }
+  .community-graphic { gap:10px; }
 
   .town {
     width:120px;
@@ -552,23 +518,14 @@ footer p {
     margin-bottom:5px;
   }
 
-  .town-name {
-    font-size:.9rem;
-  }
+  .town-name { font-size:.9rem; }
 
-  .plus {
-    font-size:1.5rem;
-  }
+  .plus { font-size:1.5rem; }
 
-  .steps {
-    grid-template-columns:1fr;
-  }
+  .steps { grid-template-columns:1fr; }
 
-  .quick-grid {
-    grid-template-columns:1fr;
-  }
+  .quick-grid { grid-template-columns:1fr; }
 }
-
 </style>
 </head>
 
@@ -590,6 +547,7 @@ footer p {
     <a href="#faqs">FAQs</a>
     <a href="#process">How It Works</a>
     <a href="#sources">Sources</a>
+    <a href="mailto:studyourtowns@gmail.com">Contact</a>
     <a href="#why" class="nav-button">Why Study?</a>
   </div>
 
@@ -612,10 +570,10 @@ This is a proposal to study consolidation, not to merge the towns.
 </div>
 
 <p class="hero-description">
-A resident petition can begin a public process to examine whether municipal
-consolidation could affect taxes, schools, services and the structure of local
-government. The purpose of the study is to get the facts before residents are
-asked to make a decision about consolidation.
+New Jersey law allows residents to petition for a formal study of whether
+municipal consolidation makes sense. The study would examine taxes, schools,
+services, finances and the structure of local government before any decision
+about actually consolidating the towns is made.
 </p>
 
 
@@ -707,7 +665,7 @@ asked to make a decision about consolidation.
 
 <p class="intro">
 The central idea is simple: before deciding whether these communities should
-consolidate, residents can ask for a formal study of what consolidation would
+consolidate, residents can request a formal study of what consolidation would
 actually mean.
 </p>
 
@@ -718,6 +676,7 @@ actually mean.
 <details open>
 <summary>1. What is this about?</summary>
 <div class="answer">
+
 <p>
 Study Your Towns is a resident-led effort to explore whether municipal
 consolidation involving Collingswood, Oaklyn and Woodlynne deserves formal
@@ -725,10 +684,12 @@ study.
 </p>
 
 <p>
-The question is whether some of the governmental and school structures
-currently maintained separately could potentially be organized more
-efficiently while maintaining or improving services.
+New Jersey's Local Option Municipal Consolidation process allows a
+representative committee of registered voters from two or more contiguous
+municipalities to petition the New Jersey Local Finance Board for creation of
+a Municipal Consolidation Study Commission.
 </p>
+
 </div>
 </details>
 
@@ -736,19 +697,18 @@ efficiently while maintaining or improving services.
 <details>
 <summary>2. Does signing a petition merge the towns?</summary>
 <div class="answer">
+
 <p>
-No. The petition itself does not consolidate the municipalities.
+No. Signing the petition does not consolidate the municipalities and does not
+authorize consolidation.
 </p>
 
 <p>
-It begins a statutory process through which residents can vote on whether a
-Municipal Consolidation Study Commission should be established.
+The petition asks the New Jersey Local Finance Board to create a Municipal
+Consolidation Study Commission to formally examine whether consolidation is
+feasible and what its consequences would be.
 </p>
 
-<p>
-The purpose of that commission is to investigate the consequences of
-consolidation before residents are asked to make a final decision.
-</p>
 </div>
 </details>
 
@@ -756,17 +716,29 @@ consolidation before residents are asked to make a final decision.
 <details>
 <summary>3. How does the process work?</summary>
 <div class="answer">
+
 <p>
-The process begins with petitions signed by registered voters in each
-participating municipality.
+Under the Local Option process, a representative committee of registered
+voters collects the signatures required by state law and petitions the New
+Jersey Local Finance Board.
 </p>
 
 <p>
-If the statutory petition requirements are satisfied, voters consider whether
-to establish a consolidation study commission. If approved in the participating
-municipalities, the commission conducts a formal analysis and ultimately
-reports its findings and recommendations.
+The application proposes how study commissioners would be selected, their
+qualifications, the study timetable and other details of the study process.
 </p>
+
+<p>
+Public hearings are held in each participating municipality, along with a
+joint public hearing accessible to residents of all participating
+municipalities.
+</p>
+
+<p>
+If the Local Finance Board approves the application, the Municipal
+Consolidation Study Commission is created and conducts the formal study.
+</p>
+
 </div>
 </details>
 
@@ -774,16 +746,21 @@ reports its findings and recommendations.
 <details>
 <summary>4. How many petition signatures are needed?</summary>
 <div class="answer">
+
 <p>
-Under the resident-initiated process described in New Jersey's Municipal
-Consolidation Act, the petition requirement is based on 10% of the votes cast
-in each municipality at the most recent General Assembly election.
+Under New Jersey's Local Option Municipal Consolidation law, a resident
+petition must contain signatures from registered and qualified voters equal
+to at least 10% of the total votes cast in the participating municipalities
+at the most recent general election at which members of the New Jersey
+General Assembly were elected.
 </p>
 
 <p>
-The precise number should be verified with the appropriate election and state
-officials before petitions are circulated.
+The precise petition requirements and signature calculation should be
+confirmed with the New Jersey Division of Local Government Services before
+petitions are circulated.
 </p>
+
 </div>
 </details>
 
@@ -791,6 +768,7 @@ officials before petitions are circulated.
 <details>
 <summary>5. What would the study examine?</summary>
 <div class="answer">
+
 <p>A formal study can examine issues including:</p>
 
 <ul>
@@ -807,8 +785,10 @@ officials before petitions are circulated.
 </ul>
 
 <p>
-The point is to examine both potential advantages and potential disadvantages.
+The purpose is to examine potential advantages, disadvantages, costs and
+savings before any consolidation plan is considered for approval.
 </p>
+
 </div>
 </details>
 
@@ -816,8 +796,9 @@ The point is to examine both potential advantages and potential disadvantages.
 <details id="taxes">
 <summary>6. Could consolidation lower my property taxes?</summary>
 <div class="answer">
+
 <p>
-Possibly, but that is one of the central questions a formal fiscal analysis
+Possibly, but that is one of the central questions the formal fiscal analysis
 would need to answer.
 </p>
 
@@ -829,9 +810,10 @@ operations.
 </p>
 
 <p>
-A study would allow residents to evaluate those numbers rather than relying
-on assumptions.
+The New Jersey Department of Community Affairs is required to prepare an
+objective fiscal study for the commission.
 </p>
+
 </div>
 </details>
 
@@ -839,6 +821,7 @@ on assumptions.
 <details id="schools">
 <summary>7. What about our schools?</summary>
 <div class="answer">
+
 <p>
 The three communities already have important educational relationships.
 Oaklyn students attend Collingswood beginning in the middle-school grades,
@@ -848,14 +831,19 @@ sending-receiving arrangements.
 
 <p>
 A consolidation study could examine whether a more unified school structure
-would make educational or financial sense, including effects on administration,
-curriculum, staffing, special education, transportation, facilities, state aid
-and school taxes.
+would make educational or financial sense, including effects on
+administration, curriculum, staffing, special education, transportation,
+facilities, state aid and school taxes.
 </p>
 
 <p>
-It would also identify potential disadvantages or transition costs.
+If consolidation of the boards of education is included in the study, state
+law provides for a representative appointed by the Commissioner of Education
+to serve as a non-voting member of the commission, and the county
+superintendent of schools conducts a study of the impact on the educational
+system and its finances.
 </p>
+
 </div>
 </details>
 
@@ -863,6 +851,7 @@ It would also identify potential disadvantages or transition costs.
 <details>
 <summary>8. Would our town identities disappear?</summary>
 <div class="answer">
+
 <p>
 A governmental consolidation does not automatically erase the history,
 neighborhood identity, traditions or community organizations associated with
@@ -870,9 +859,11 @@ the existing towns.
 </p>
 
 <p>
-How a consolidated municipality would be named and structured would be among
-the issues that would need to be addressed during the process.
+The Local Option law provides flexibility for a consolidation study to
+consider issues such as service districts, advisory planning districts and
+continued geographic references to the former municipalities.
 </p>
+
 </div>
 </details>
 
@@ -880,6 +871,7 @@ the issues that would need to be addressed during the process.
 <details>
 <summary>9. Would municipal services be reduced?</summary>
 <div class="answer">
+
 <p>
 That cannot be determined before the study.
 </p>
@@ -892,10 +884,10 @@ government.
 </p>
 
 <p>
-The relevant question is not simply how much government can be eliminated,
-but what structure can provide residents with the appropriate level of service
-at a sustainable cost.
+The relevant question is what structure can provide residents with an
+appropriate level of service at a sustainable cost.
 </p>
+
 </div>
 </details>
 
@@ -903,54 +895,69 @@ at a sustainable cost.
 <details>
 <summary>10. What about police, public works and other departments?</summary>
 <div class="answer">
+
 <p>
-All major municipal functions would have to be considered as part of a serious
-consolidation study.
+All major municipal functions would have to be considered as part of a
+serious consolidation study.
 </p>
 
 <p>
-The study would examine staffing, contracts, facilities, equipment, management,
-service levels, costs and transition requirements before recommending any
-particular structure.
+The study could examine staffing, contracts, facilities, equipment,
+management, service levels, costs and transition requirements before
+recommending any particular structure.
 </p>
+
 </div>
 </details>
 
 
 <details>
-<summary>11. How long would this take?</summary>
+<summary>11. How long would the study take?</summary>
 <div class="answer">
+
 <p>
-Municipal consolidation is deliberately a multi-stage process rather than an
-immediate change.
+The Local Option process is designed to allow the study timetable to be
+developed as part of the application rather than imposing a single timetable
+on every consolidation study.
 </p>
 
 <p>
-There is first a petition process, followed by an election on whether to
-establish a study commission. If voters authorize the study, the commission
-then conducts its analysis and prepares findings and recommendations.
+The application must specify key events and deadlines. State law permits the
+study period to be as long as three years and requires time for State agencies
+to review the commission's report.
 </p>
 
 <p>
-Any eventual consolidation would require additional formal steps after the
-study.
+The actual timetable proposed for Collingswood, Oaklyn and Woodlynne would be
+established in the application submitted to the Local Finance Board.
 </p>
+
 </div>
 </details>
 
 
 <details>
-<summary>12. What happens if the study says consolidation is a bad idea?</summary>
+<summary>12. What happens when the study is finished?</summary>
 <div class="answer">
+
 <p>
-That would itself be useful information.
+The commission issues its findings and recommendations. A study recommending
+consolidation does not, by itself, merge the municipalities.
 </p>
 
 <p>
-The purpose of studying consolidation is not to predetermine the result. A
-credible study should identify costs, disadvantages and risks as well as
-potential savings or improvements.
+The original application must specify how any proposed consolidation plan
+would ultimately be approved. New Jersey's Local Option law allows that
+approval process to involve a voter referendum, approval by the municipal
+governing bodies, or both.
 </p>
+
+<p>
+That means the rules for any eventual decision about actual consolidation are
+established as part of the study process rather than being decided only after
+the study is complete.
+</p>
+
 </div>
 </details>
 
@@ -958,6 +965,7 @@ potential savings or improvements.
 <details>
 <summary>13. Why these three towns?</summary>
 <div class="answer">
+
 <p>
 Collingswood, Oaklyn and Woodlynne are neighboring Camden County communities
 with existing connections, including established relationships among their
@@ -968,6 +976,7 @@ school systems.
 Whether those connections are sufficient to make municipal consolidation
 practical is precisely the type of question a formal study could examine.
 </p>
+
 </div>
 </details>
 
@@ -975,9 +984,8 @@ practical is precisely the type of question a formal study could examine.
 <details>
 <summary>14. Does supporting the study mean supporting consolidation?</summary>
 <div class="answer">
-<p>
-No.
-</p>
+
+<p>No.</p>
 
 <p>
 A resident can believe consolidation deserves serious investigation without
@@ -985,9 +993,10 @@ having decided whether consolidation itself is desirable.
 </p>
 
 <p>
-The study process is intended to produce the information needed to make that
-later decision.
+The study process is intended to produce information residents and local
+officials can use when considering that later decision.
 </p>
+
 </div>
 </details>
 
@@ -995,6 +1004,7 @@ later decision.
 <details>
 <summary>15. Who is behind Study Your Towns?</summary>
 <div class="answer">
+
 <p>
 Study Your Towns is an independent resident-led project. It is not an official
 project of Collingswood, Oaklyn, Woodlynne, their school districts, Camden
@@ -1005,6 +1015,12 @@ County or the State of New Jersey.
 Its purpose is to provide information about the consolidation-study process
 and encourage public examination of the issue.
 </p>
+
+<p>
+Questions or interested in getting involved?
+<a href="mailto:studyourtowns@gmail.com">studyourtowns@gmail.com</a>
+</p>
+
 </div>
 </details>
 
@@ -1012,17 +1028,24 @@ and encourage public examination of the issue.
 <details>
 <summary>16. Where can I read the law myself?</summary>
 <div class="answer">
+
 <p>
-The New Jersey Department of Community Affairs has published a reference
-document containing the state's municipal consolidation statutes.
+The process described on this website is the Local Option Municipal
+Consolidation process contained in N.J.S.A. 40A:65-25 through 40A:65-29.
 </p>
 
 <p>
-<a href="https://www.nj.gov/dca/dlgs/misc_docs/Reference%20-%20Municipal%20Consolidation%20Statutes%20-%20July%202019.pdf"
+The New Jersey Department of Community Affairs publishes the Uniform Shared
+Services and Consolidation Act, which contains these provisions.
+</p>
+
+<p>
+<a href="https://www.nj.gov/dca/divisions/dlgs/programs/shared_docs/Reference%20-%20Uniform%20Shared%20Services%20and%20Consolidation%20Act.pdf"
 target="_blank" rel="noopener">
-Read the NJ Department of Community Affairs Municipal Consolidation Statutes
+Read the NJ Uniform Shared Services and Consolidation Act
 </a>
 </p>
+
 </div>
 </details>
 
@@ -1031,11 +1054,17 @@ Read the NJ Department of Community Affairs Municipal Consolidation Statutes
 </section>
 
 
-
 <section class="process" id="process">
 
-<h2 class="section-title">How the Study Process Works</h2>
+<h2 class="section-title">How the Local Option Study Process Works</h2>
 <div class="section-line"></div>
+
+<p class="intro">
+New Jersey's Local Option process allows residents to petition the Local
+Finance Board directly for creation of a Municipal Consolidation Study
+Commission. The petition does not itself merge the municipalities.
+</p>
+
 
 <div class="steps">
 
@@ -1043,35 +1072,51 @@ Read the NJ Department of Community Affairs Municipal Consolidation Statutes
 <div class="step-number">1</div>
 <h3>Petition</h3>
 <p>
-Residents collect the number of valid signatures required by New Jersey law
-in each participating municipality.
+A representative committee of registered voters collects the signatures
+required by New Jersey law.
 </p>
 </div>
+
 
 <div class="step">
 <div class="step-number">2</div>
-<h3>Vote to Study</h3>
+<h3>Apply to the State</h3>
 <p>
-If the petitions qualify, residents vote on whether to establish a Municipal
-Consolidation Study Commission.
+The committee petitions the New Jersey Local Finance Board to create a
+Municipal Consolidation Study Commission and proposes how the study would be
+conducted.
 </p>
 </div>
+
 
 <div class="step">
 <div class="step-number">3</div>
-<h3>Study</h3>
+<h3>Public Hearings</h3>
 <p>
-The commission examines finances, schools, services, debt, state aid,
-employees, facilities and other consequences of consolidation.
+Public hearings are held in each participating municipality and at a joint
+hearing before the Local Finance Board acts on the application.
 </p>
 </div>
 
+
 <div class="step">
 <div class="step-number">4</div>
+<h3>Study</h3>
+<p>
+If approved, the commission studies finances, taxes, schools, debt, state
+aid, employees, services, facilities and other consequences of
+consolidation.
+</p>
+</div>
+
+
+<div class="step">
+<div class="step-number">5</div>
 <h3>Results</h3>
 <p>
-The commission publishes its findings and recommendations so residents can
-evaluate whether consolidation makes sense.
+The commission publishes its findings and any proposed consolidation plan.
+Any actual consolidation would then have to be approved through the method
+specified in the approved application.
 </p>
 </div>
 
@@ -1080,28 +1125,34 @@ evaluate whether consolidation makes sense.
 
 <div class="callout" id="why">
 
-<h2>Why sign a petition just to study it?</h2>
+<h2>What does signing the petition actually do?</h2>
 
 <p>
-Because the important questions cannot be answered reliably without examining
-the actual numbers.
+It asks the New Jersey Local Finance Board to authorize a formal study of
+whether consolidating Collingswood, Oaklyn and Woodlynne makes sense.
 </p>
 
 <p>
-Could one municipal government cost less than three? Could school
-administration or facilities be organized differently? How would property
-taxes change in each town? What would happen to state aid and existing debt?
-Would services improve, decline or remain essentially the same?
+It does not merge the towns. It does not approve a consolidation plan.
+It begins the process of examining the actual numbers and consequences.
 </p>
 
 <p>
-A formal study provides a process for answering those questions.
+Could one municipal government cost less than three? How would property taxes
+change in each town? Could school administration or facilities be organized
+differently? What would happen to state aid and existing debt? Would services
+improve, decline or remain essentially the same?
+</p>
+
+<p>
+The Municipal Consolidation Study Commission would be created to investigate
+questions like these.
 </p>
 
 <p>
 <strong>
-Signing a study petition is not a vote for consolidation. It is a request to
-find out whether consolidation makes sense.
+Signing the petition means supporting a formal study, not committing to
+consolidation.
 </strong>
 </p>
 
@@ -1110,15 +1161,13 @@ find out whether consolidation makes sense.
 </section>
 
 
-
 <section class="sources" id="sources">
 
 <h2 class="section-title">NJ Law & Sources</h2>
 <div class="section-line"></div>
 
 <p class="intro">
-Don't take this website's word for it. Read the underlying state materials and
-reach your own conclusions.
+Read the underlying state materials and reach your own conclusions.
 </p>
 
 <div class="source-box">
@@ -1126,20 +1175,28 @@ reach your own conclusions.
 <h3>New Jersey Department of Community Affairs</h3>
 
 <p>
-Municipal Consolidation Statutes reference document:
+The resident-led process described on this website is the Local Option
+Municipal Consolidation process established by N.J.S.A. 40A:65-25 through
+40A:65-29.
+</p>
+
+<p>
+<a href="https://www.nj.gov/dca/divisions/dlgs/programs/shared_docs/Reference%20-%20Uniform%20Shared%20Services%20and%20Consolidation%20Act.pdf"
+target="_blank" rel="noopener">
+NJ Uniform Shared Services and Consolidation Act
+</a>
 </p>
 
 <p>
 <a href="https://www.nj.gov/dca/dlgs/misc_docs/Reference%20-%20Municipal%20Consolidation%20Statutes%20-%20July%202019.pdf"
 target="_blank" rel="noopener">
-NJ Municipal Consolidation Statutes
+NJ Municipal Consolidation Statutes Reference
 </a>
 </p>
 
 </div>
 
 </section>
-
 
 </main>
 
@@ -1149,8 +1206,13 @@ NJ Municipal Consolidation Statutes
 <p><strong>Study Your Towns</strong></p>
 
 <p>
-Exploring the municipal consolidation study process for Collingswood,
-Oaklyn and Woodlynne, New Jersey.
+Exploring the Local Option municipal consolidation study process for
+Collingswood, Oaklyn and Woodlynne, New Jersey.
+</p>
+
+<p>
+Questions, comments, or interested in getting involved?<br>
+<a href="mailto:studyourtowns@gmail.com">studyourtowns@gmail.com</a>
 </p>
 
 <p>
