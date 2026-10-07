@@ -1,13 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Study Your Towns | Collingswood, Oaklyn & Woodlynne</title>
-
-<meta name="description" content="Learn about a resident-led proposal to study possible municipal consolidation involving Collingswood, Oaklyn and Woodlynne, New Jersey.">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Study Your Towns | Collingswood, Oaklyn &amp; Woodlynne</title>
+<meta content="Learn about a resident-led proposal to study possible municipal consolidation involving Collingswood, Oaklyn and Woodlynne, New Jersey." name="description"/>
 <style>
 :root {
   --navy:#09264b;
@@ -526,701 +524,540 @@ footer a {
 
   .quick-grid { grid-template-columns:1fr; }
 }
+
+
+/* LANGUAGE TOGGLE */
+.lang-toggle { display:flex; align-items:center; gap:4px; margin-left:auto; }
+.lang-toggle button { border:1px solid var(--border); background:white; color:var(--navy); font-weight:700; padding:7px 10px; border-radius:8px; cursor:pointer; }
+.lang-toggle button.active { background:var(--navy); color:white; border-color:var(--navy); }
+@media(max-width:900px){ nav {gap:12px;} .lang-toggle {margin-left:auto;} }
 </style>
 </head>
-
 <body>
-
 <header>
 <nav>
-
-  <div class="brand">
-    <div class="brand-houses">
-      <span class="tiny-house"></span>
-      <span class="tiny-house"></span>
-      <span class="tiny-house"></span>
-    </div>
+<div class="brand">
+<div class="brand-houses">
+<span class="tiny-house"></span>
+<span class="tiny-house"></span>
+<span class="tiny-house"></span>
+</div>
     Study Your Towns
   </div>
-
-  <div class="navlinks">
-    <a href="#faqs">FAQs</a>
-    <a href="#process">How It Works</a>
-    <a href="#sources">Sources</a>
-    <a href="mailto:studyourtowns@gmail.com">Contact</a>
-    <a href="#why" class="nav-button">Why Study?</a>
-  </div>
-
+<div class="navlinks">
+<a data-en="FAQs" data-es="Preguntas frecuentes" data-i18n="t0" href="#faqs">FAQs</a>
+<a data-en="How It Works" data-es="Cómo funciona" data-i18n="t1" href="#process">How It Works</a>
+<a data-en="Sources" data-es="Fuentes" data-i18n="t2" href="#sources">Sources</a>
+<a data-en="Contact" data-es="Contacto" data-i18n="t3" href="mailto:studyourtowns@gmail.com">Contact</a>
+<a class="nav-button" data-en="Why Study?" data-es="¿Por qué estudiarlo?" data-i18n="t4" href="#why">Why Study?</a>
+</div>
+<div aria-label="Language / Idioma" class="lang-toggle">
+<button class="active" id="lang-en" onclick="setLanguage('en')" type="button">English</button>
+<button id="lang-es" onclick="setLanguage('es')" type="button">Español</button>
+</div>
 </nav>
 </header>
-
-
 <section class="hero">
-
 <div class="hero-inner">
-
-<h1>Three Towns. One Question.</h1>
-
-<div class="hero-subtitle">
+<h1 data-en="Three Towns. One Question." data-es="Tres municipios. Una pregunta." data-i18n="t5">Three Towns. One Question.</h1>
+<div class="hero-subtitle" data-en="Could Collingswood, Oaklyn and Woodlynne work better together?" data-es="¿Podrían Collingswood, Oaklyn y Woodlynne funcionar mejor juntos?" data-i18n="t6">
 Could Collingswood, Oaklyn and Woodlynne work better together?
 </div>
-
-<div class="study-banner">
-This is a proposal to study consolidation, not to merge the towns.
+<div class="study-banner" data-en="A proposal to formally study municipal consolidation." data-es="Una propuesta para estudiar formalmente la consolidación municipal." data-i18n="t7">
+A proposal to formally study municipal consolidation.
 </div>
-
-<p class="hero-description">
+<p class="hero-description" data-en="New Jersey law allows residents to petition for a formal study of whether municipal consolidation makes sense. The study would examine taxes, services, finances and the structure of local government before any decision about actually consolidating the towns is made." data-es="La ley de Nueva Jersey permite que los residentes soliciten un estudio formal para determinar si la consolidación municipal tiene sentido. El estudio examinaría los impuestos, los servicios, las finanzas y la estructura del gobierno local antes de que se tome cualquier decisión sobre una posible consolidación de los municipios." data-i18n="t8">
 New Jersey law allows residents to petition for a formal study of whether
-municipal consolidation makes sense. The study would examine taxes, schools,
-services, finances and the structure of local government before any decision
-about actually consolidating the towns is made.
+municipal consolidation makes sense. The study would examine taxes, services,
+finances and the structure of local government before any decision about
+actually consolidating the towns is made.
 </p>
-
-
 <div class="community-graphic">
-
-  <div class="town collingswood">
-    <div class="house-icon"></div>
-    <div class="town-name">Collingswood</div>
-  </div>
-
-  <div class="plus">+</div>
-
-  <div class="town oaklyn">
-    <div class="house-icon"></div>
-    <div class="town-name">Oaklyn</div>
-  </div>
-
-  <div class="plus">+</div>
-
-  <div class="town woodlynne">
-    <div class="house-icon"></div>
-    <div class="town-name">Woodlynne</div>
-  </div>
-
-  <div class="arrow">→</div>
-
-  <div class="town community">
-
-    <div class="houses">
-      <div class="house-icon"></div>
-      <div class="house-icon"></div>
-      <div class="house-icon"></div>
-    </div>
-
-    <div class="town-name">One Community?</div>
-
-  </div>
-
+<div class="town collingswood">
+<div class="house-icon"></div>
+<div class="town-name">Collingswood</div>
 </div>
-
+<div class="plus">+</div>
+<div class="town oaklyn">
+<div class="house-icon"></div>
+<div class="town-name">Oaklyn</div>
+</div>
+<div class="plus">+</div>
+<div class="town woodlynne">
+<div class="house-icon"></div>
+<div class="town-name">Woodlynne</div>
+</div>
+<div class="arrow">→</div>
+<div class="town community">
+<div class="houses">
+<div class="house-icon"></div>
+<div class="house-icon"></div>
+<div class="house-icon"></div>
+</div>
+<div class="town-name" data-en="One Community?" data-es="¿Una sola comunidad?" data-i18n="t9">One Community?</div>
+</div>
+</div>
 </div>
 </section>
-
-
 <section class="quicklinks">
-
 <div class="quick-grid">
-
 <a class="quick" href="#faqs">
-  <div class="quick-icon">?</div>
-  <strong>Read the FAQs</strong>
+<div class="quick-icon">?</div>
+<strong data-en="Read the FAQs" data-es="Leer las preguntas frecuentes" data-i18n="t10">Read the FAQs</strong>
   Get the answers
 </a>
-
 <a class="quick" href="#process">
-  <div class="quick-icon">①②③</div>
-  <strong>How It Works</strong>
+<div class="quick-icon">①②③</div>
+<strong data-en="How It Works" data-es="Cómo funciona" data-i18n="t11">How It Works</strong>
   Step by step
 </a>
-
 <a class="quick" href="#taxes">
-  <div class="quick-icon">$</div>
-  <strong>Taxes</strong>
+<div class="quick-icon">$</div>
+<strong data-en="Taxes" data-es="Impuestos" data-i18n="t12">Taxes</strong>
   What would be studied
 </a>
-
 <a class="quick" href="#schools">
-  <div class="quick-icon">⌂</div>
-  <strong>Schools</strong>
+<div class="quick-icon">⌂</div>
+<strong data-en="Schools" data-es="Escuelas" data-i18n="t13">Schools</strong>
   Existing connections
 </a>
-
 <a class="quick" href="#sources">
-  <div class="quick-icon">§</div>
-  <strong>NJ Law & Sources</strong>
+<div class="quick-icon">§</div>
+<strong data-en="NJ Law &amp; Sources" data-es="Ley de NJ y fuentes" data-i18n="t14">NJ Law &amp; Sources</strong>
   Read it yourself
 </a>
-
 </div>
 </section>
-
-
 <main>
-
 <section id="faqs">
-
-<h2 class="section-title">Frequently Asked Questions</h2>
+<h2 class="section-title" data-en="Frequently Asked Questions" data-es="Preguntas frecuentes" data-i18n="t15">Frequently Asked Questions</h2>
 <div class="section-line"></div>
-
-<p class="intro">
+<p class="intro" data-en="The central idea is simple: before deciding whether these communities should consolidate, residents can request a formal study of what consolidation would actually mean." data-es="La idea central es sencilla: antes de decidir si estas comunidades deben consolidarse, los residentes pueden solicitar un estudio formal sobre lo que realmente implicaría la consolidación." data-i18n="t16">
 The central idea is simple: before deciding whether these communities should
 consolidate, residents can request a formal study of what consolidation would
 actually mean.
 </p>
-
-
 <div class="faq-grid">
-
-
-<details open>
-<summary>1. What is this about?</summary>
+<details open="">
+<summary data-en="1. What is this about?" data-es="1. ¿De qué se trata?" data-i18n="t17">1. What is this about?</summary>
 <div class="answer">
-
-<p>
+<p data-en="Study Your Towns is a resident-led effort to explore whether municipal consolidation involving Collingswood, Oaklyn and Woodlynne deserves formal study." data-es="Study Your Towns es una iniciativa liderada por residentes para explorar si la consolidación municipal de Collingswood, Oaklyn y Woodlynne merece un estudio formal." data-i18n="t18">
 Study Your Towns is a resident-led effort to explore whether municipal
 consolidation involving Collingswood, Oaklyn and Woodlynne deserves formal
 study.
 </p>
-
-<p>
+<p data-en="New Jersey's Local Option Municipal Consolidation process allows a representative committee of registered voters from two or more contiguous municipalities to petition the New Jersey Local Finance Board for creation of a Municipal Consolidation Study Commission." data-es="El proceso de Consolidación Municipal por Opción Local de Nueva Jersey permite que un comité representativo de votantes registrados de dos o más municipios contiguos solicite a la Junta de Finanzas Locales de Nueva Jersey la creación de una Comisión de Estudio de Consolidación Municipal." data-i18n="t19">
 New Jersey's Local Option Municipal Consolidation process allows a
 representative committee of registered voters from two or more contiguous
 municipalities to petition the New Jersey Local Finance Board for creation of
 a Municipal Consolidation Study Commission.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>2. Does signing a petition merge the towns?</summary>
+<summary data-en="2. Does signing a petition merge the towns?" data-es="2. ¿Firmar una petición consolida los municipios?" data-i18n="t20">2. Does signing a petition merge the towns?</summary>
 <div class="answer">
-
-<p>
+<p data-en="No. Signing the petition does not consolidate the municipalities and does not authorize consolidation." data-es="No. Firmar la petición no consolida los municipios ni autoriza la consolidación." data-i18n="t21">
 No. Signing the petition does not consolidate the municipalities and does not
 authorize consolidation.
 </p>
-
-<p>
+<p data-en="The petition asks the New Jersey Local Finance Board to create a Municipal Consolidation Study Commission to formally examine whether consolidation is feasible and what its consequences would be." data-es="La petición solicita a la Junta de Finanzas Locales de Nueva Jersey que cree una Comisión de Estudio de Consolidación Municipal para examinar formalmente si la consolidación es viable y cuáles serían sus consecuencias." data-i18n="t22">
 The petition asks the New Jersey Local Finance Board to create a Municipal
 Consolidation Study Commission to formally examine whether consolidation is
 feasible and what its consequences would be.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>3. How does the process work?</summary>
+<summary data-en="3. How does the process work?" data-es="3. ¿Cómo funciona el proceso?" data-i18n="t23">3. How does the process work?</summary>
 <div class="answer">
-
-<p>
+<p data-en="Under the Local Option process, a representative committee of registered voters collects the signatures required by state law and petitions the New Jersey Local Finance Board." data-es="Bajo el proceso de Opción Local, un comité representativo de votantes registrados reúne las firmas exigidas por la ley estatal y presenta una petición ante la Junta de Finanzas Locales de Nueva Jersey." data-i18n="t24">
 Under the Local Option process, a representative committee of registered
 voters collects the signatures required by state law and petitions the New
 Jersey Local Finance Board.
 </p>
-
-<p>
+<p data-en="The application proposes how study commissioners would be selected, their qualifications, the study timetable and other details of the study process." data-es="La solicitud propone cómo se seleccionarían los integrantes de la comisión de estudio, sus cualificaciones, el calendario del estudio y otros detalles del proceso." data-i18n="t25">
 The application proposes how study commissioners would be selected, their
 qualifications, the study timetable and other details of the study process.
 </p>
-
-<p>
+<p data-en="Public hearings are held in each participating municipality, along with a joint public hearing accessible to residents of all participating municipalities." data-es="Se celebran audiencias públicas en cada municipio participante, además de una audiencia pública conjunta accesible a los residentes de todos los municipios participantes." data-i18n="t26">
 Public hearings are held in each participating municipality, along with a
 joint public hearing accessible to residents of all participating
 municipalities.
 </p>
-
-<p>
+<p data-en="If the Local Finance Board approves the application, the Municipal Consolidation Study Commission is created and conducts the formal study." data-es="Si la Junta de Finanzas Locales aprueba la solicitud, se crea la Comisión de Estudio de Consolidación Municipal y se realiza el estudio formal." data-i18n="t27">
 If the Local Finance Board approves the application, the Municipal
 Consolidation Study Commission is created and conducts the formal study.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>4. How many petition signatures are needed?</summary>
+<summary data-en="4. How many petition signatures are needed?" data-es="4. ¿Cuántas firmas se necesitan?" data-i18n="t28">4. How many petition signatures are needed?</summary>
 <div class="answer">
-
-<p>
-Under New Jersey's Local Option Municipal Consolidation law, a resident
-petition must contain signatures from registered and qualified voters equal
-to at least 10% of the total votes cast in the participating municipalities
-at the most recent general election at which members of the New Jersey
-General Assembly were elected.
+<p data-en="Based on guidance received from the New Jersey Division of Local Government Services, each municipality must meet the applicable petition threshold to be included in the application and study. The statutory threshold is based on 10% of votes cast at the most recent general election at which members of the New Jersey General Assembly were elected." data-es="Según la orientación recibida de la División de Servicios de Gobierno Local de Nueva Jersey, cada municipio debe alcanzar el umbral de firmas aplicable para ser incluido en la solicitud y el estudio. El umbral legal se basa en el 10 % de los votos emitidos en la elección general más reciente en la que se eligieron miembros de la Asamblea General de Nueva Jersey." data-i18n="t29">
+Based on guidance received from the New Jersey Division of Local Government
+Services, each municipality must meet the applicable petition threshold to be
+included in the application and study. The statutory threshold is based on 10%
+of votes cast at the most recent general election at which members of the New
+Jersey General Assembly were elected.
 </p>
-
-<p>
+<p data-en="The precise petition requirements and signature calculation should be confirmed before petitions are circulated. DCA has also recommended consulting appropriate municipal or legal counsel regarding the petition process." data-es="Los requisitos precisos de la petición y el cálculo de firmas deben confirmarse antes de circular las peticiones. El DCA también ha recomendado consultar con el abogado municipal o asesoría legal correspondiente sobre el proceso de petición." data-i18n="t30">
 The precise petition requirements and signature calculation should be
-confirmed with the New Jersey Division of Local Government Services before
-petitions are circulated.
+confirmed before petitions are circulated. DCA has also recommended consulting
+appropriate municipal or legal counsel regarding the petition process.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>5. What would the study examine?</summary>
+<summary data-en="5. What would the study examine?" data-es="5. ¿Qué examinaría el estudio?" data-i18n="t31">5. What would the study examine?</summary>
 <div class="answer">
-
-<p>A formal study can examine issues including:</p>
-
+<p data-en="A formal study can examine issues including:" data-es="Un estudio formal puede examinar cuestiones que incluyen:" data-i18n="t32">A formal study can examine issues including:</p>
 <ul>
-<li>municipal and school property taxes</li>
-<li>state aid</li>
-<li>municipal and school debt</li>
-<li>government administration</li>
-<li>schools and educational services</li>
-<li>employees and labor obligations</li>
-<li>public works and other municipal services</li>
-<li>facilities and equipment</li>
-<li>existing shared-service arrangements</li>
-<li>potential costs and savings of consolidation</li>
+<li data-en="municipal and school property taxes" data-es="impuestos municipales y escolares sobre la propiedad" data-i18n="t33">municipal and school property taxes</li>
+<li data-en="state aid" data-es="ayuda estatal" data-i18n="t34">state aid</li>
+<li data-en="municipal and school debt" data-es="deuda municipal y escolar" data-i18n="t35">municipal and school debt</li>
+<li data-en="government administration" data-es="administración gubernamental" data-i18n="t36">government administration</li>
+<li data-en="schools and educational services" data-es="escuelas y servicios educativos" data-i18n="t37">schools and educational services</li>
+<li data-en="employees and labor obligations" data-es="empleados y obligaciones laborales" data-i18n="t38">employees and labor obligations</li>
+<li data-en="public works and other municipal services" data-es="obras públicas y otros servicios municipales" data-i18n="t39">public works and other municipal services</li>
+<li data-en="facilities and equipment" data-es="instalaciones y equipos" data-i18n="t40">facilities and equipment</li>
+<li data-en="existing shared-service arrangements" data-es="acuerdos existentes de servicios compartidos" data-i18n="t41">existing shared-service arrangements</li>
+<li data-en="potential costs and savings of consolidation" data-es="posibles costos y ahorros de la consolidación" data-i18n="t42">potential costs and savings of consolidation</li>
 </ul>
-
-<p>
+<p data-en="The purpose is to examine potential advantages, disadvantages, costs and savings before any consolidation plan is considered for approval." data-es="El propósito es examinar posibles ventajas, desventajas, costos y ahorros antes de que cualquier plan de consolidación sea considerado para su aprobación." data-i18n="t43">
 The purpose is to examine potential advantages, disadvantages, costs and
 savings before any consolidation plan is considered for approval.
 </p>
-
 </div>
 </details>
-
-
 <details id="taxes">
-<summary>6. Could consolidation lower my property taxes?</summary>
+<summary data-en="6. Could consolidation lower my property taxes?" data-es="6. ¿Podría la consolidación reducir mis impuestos sobre la propiedad?" data-i18n="t44">6. Could consolidation lower my property taxes?</summary>
 <div class="answer">
-
-<p>
+<p data-en="Possibly, but that is one of the central questions the formal fiscal analysis would need to answer." data-es="Posiblemente, pero esa es una de las preguntas centrales que tendría que responder el análisis fiscal formal." data-i18n="t45">
 Possibly, but that is one of the central questions the formal fiscal analysis
 would need to answer.
 </p>
-
-<p>
+<p data-en="Consolidation could reduce some duplicated administrative expenses. At the same time, tax rates could be affected by differences in property values, existing debt, school finances, state aid and the costs of combining operations." data-es="La consolidación podría reducir algunos gastos administrativos duplicados. Al mismo tiempo, las tasas impositivas podrían verse afectadas por diferencias en los valores de las propiedades, la deuda existente, las finanzas escolares, la ayuda estatal y los costos de combinar operaciones." data-i18n="t46">
 Consolidation could reduce some duplicated administrative expenses. At the
 same time, tax rates could be affected by differences in property values,
 existing debt, school finances, state aid and the costs of combining
 operations.
 </p>
-
-<p>
+<p data-en="The New Jersey Department of Community Affairs is required to prepare an objective fiscal study for the commission." data-es="El Departamento de Asuntos Comunitarios de Nueva Jersey debe preparar un estudio fiscal objetivo para la comisión." data-i18n="t47">
 The New Jersey Department of Community Affairs is required to prepare an
 objective fiscal study for the commission.
 </p>
-
 </div>
 </details>
-
-
 <details id="schools">
-<summary>7. What about our schools?</summary>
+<summary data-en="7. What about our schools?" data-es="7. ¿Qué pasa con nuestras escuelas?" data-i18n="t48">7. What about our schools?</summary>
 <div class="answer">
-
-<p>
+<p data-en="The three communities already have important educational relationships. Oaklyn students attend Collingswood beginning in the middle-school grades, while Woodlynne students attend Collingswood High School through existing sending-receiving arrangements." data-es="Las tres comunidades ya mantienen importantes relaciones educativas. Los estudiantes de Oaklyn asisten a Collingswood a partir de los grados de escuela intermedia, mientras que los estudiantes de Woodlynne asisten a Collingswood High School mediante acuerdos existentes de envío y recepción." data-i18n="t49">
 The three communities already have important educational relationships.
 Oaklyn students attend Collingswood beginning in the middle-school grades,
 while Woodlynne students attend Collingswood High School through existing
 sending-receiving arrangements.
 </p>
-
-<p>
-A consolidation study could examine whether a more unified school structure
-would make educational or financial sense, including effects on
-administration, curriculum, staffing, special education, transportation,
-facilities, state aid and school taxes.
-</p>
-
-<p>
+<p data-en="If consolidation of the school districts is included in the study, the study could examine whether a more unified school structure would make educational or financial sense, including effects on administration, curriculum, staffing, special education, transportation, facilities, state aid and school taxes." data-es="Si la consolidación de los distritos escolares se incluye en el estudio, el estudio podría examinar si una estructura escolar más unificada tendría sentido educativo o financiero, incluidos los efectos sobre la administración, el currículo, el personal, la educación especial, el transporte, las instalaciones, la ayuda estatal y los impuestos escolares." data-i18n="schoolscope">If consolidation of the school districts is included in the study, the study could examine whether a more unified school structure would make educational or financial sense, including effects on administration, curriculum, staffing, special education, transportation, facilities, state aid and school taxes.</p>
+<p data-en="If consolidation of the boards of education is included in the study, state law provides for a representative appointed by the Commissioner of Education to serve as a non-voting member of the commission, and the county superintendent of schools conducts a study of the impact on the educational system and its finances." data-es="Si la consolidación de las juntas de educación se incluye en el estudio, la ley estatal dispone que un representante designado por el Comisionado de Educación participe como miembro sin derecho a voto de la comisión, y que el superintendente escolar del condado realice un estudio del impacto sobre el sistema educativo y sus finanzas." data-i18n="t51">
 If consolidation of the boards of education is included in the study, state
 law provides for a representative appointed by the Commissioner of Education
 to serve as a non-voting member of the commission, and the county
 superintendent of schools conducts a study of the impact on the educational
 system and its finances.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>8. Would our town identities disappear?</summary>
+<summary data-en="8. Would our town identities disappear?" data-es="8. ¿Desaparecerían las identidades de nuestros municipios?" data-i18n="t52">8. Would our town identities disappear?</summary>
 <div class="answer">
-
-<p>
+<p data-en="A governmental consolidation does not automatically erase the history, neighborhood identity, traditions or community organizations associated with the existing towns." data-es="Una consolidación gubernamental no borra automáticamente la historia, la identidad de los vecindarios, las tradiciones ni las organizaciones comunitarias asociadas con los municipios existentes." data-i18n="t53">
 A governmental consolidation does not automatically erase the history,
 neighborhood identity, traditions or community organizations associated with
 the existing towns.
 </p>
-
-<p>
+<p data-en="The Local Option law provides flexibility for a consolidation study to consider issues such as service districts, advisory planning districts and continued geographic references to the former municipalities." data-es="La ley de Opción Local ofrece flexibilidad para que un estudio de consolidación considere cuestiones como distritos de servicios, distritos consultivos de planificación y el uso continuo de referencias geográficas a los antiguos municipios." data-i18n="t54">
 The Local Option law provides flexibility for a consolidation study to
 consider issues such as service districts, advisory planning districts and
 continued geographic references to the former municipalities.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>9. Would municipal services be reduced?</summary>
+<summary data-en="9. Would municipal services be reduced?" data-es="9. ¿Se reducirían los servicios municipales?" data-i18n="t55">9. Would municipal services be reduced?</summary>
 <div class="answer">
-
-<p>
+<p data-en="That cannot be determined before the study." data-es="Eso no puede determinarse antes del estudio." data-i18n="t56">
 That cannot be determined before the study.
 </p>
-
-<p>
+<p data-en="A consolidation analysis would examine how services are currently delivered, what staffing and facilities are required, where duplication exists, and whether services could be delivered differently under a consolidated government." data-es="Un análisis de consolidación examinaría cómo se prestan actualmente los servicios, qué personal e instalaciones se requieren, dónde existen duplicaciones y si los servicios podrían prestarse de manera diferente bajo un gobierno consolidado." data-i18n="t57">
 A consolidation analysis would examine how services are currently delivered,
 what staffing and facilities are required, where duplication exists, and
 whether services could be delivered differently under a consolidated
 government.
 </p>
-
-<p>
+<p data-en="The relevant question is what structure can provide residents with an appropriate level of service at a sustainable cost." data-es="La pregunta pertinente es qué estructura puede proporcionar a los residentes un nivel adecuado de servicio a un costo sostenible." data-i18n="t58">
 The relevant question is what structure can provide residents with an
 appropriate level of service at a sustainable cost.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>10. What about police, public works and other departments?</summary>
+<summary data-en="10. What about police, public works and other departments?" data-es="10. ¿Qué pasaría con la policía, obras públicas y otros departamentos?" data-i18n="t59">10. What about police, public works and other departments?</summary>
 <div class="answer">
-
-<p>
+<p data-en="All major municipal functions would have to be considered as part of a serious consolidation study." data-es="Todas las funciones municipales principales tendrían que considerarse como parte de un estudio serio de consolidación." data-i18n="t60">
 All major municipal functions would have to be considered as part of a
 serious consolidation study.
 </p>
-
-<p>
+<p data-en="The study could examine staffing, contracts, facilities, equipment, management, service levels, costs and transition requirements before recommending any particular structure." data-es="El estudio podría examinar personal, contratos, instalaciones, equipos, administración, niveles de servicio, costos y requisitos de transición antes de recomendar una estructura particular." data-i18n="t61">
 The study could examine staffing, contracts, facilities, equipment,
 management, service levels, costs and transition requirements before
 recommending any particular structure.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>11. How long would the study take?</summary>
+<summary data-en="11. How long would the study take?" data-es="11. ¿Cuánto duraría el estudio?" data-i18n="t62">11. How long would the study take?</summary>
 <div class="answer">
-
-<p>
+<p data-en="The Local Option process is designed to allow the study timetable to be developed as part of the application rather than imposing a single timetable on every consolidation study." data-es="El proceso de Opción Local permite que el calendario del estudio se desarrolle como parte de la solicitud, en lugar de imponer un único calendario a todos los estudios de consolidación." data-i18n="t63">
 The Local Option process is designed to allow the study timetable to be
 developed as part of the application rather than imposing a single timetable
 on every consolidation study.
 </p>
-
-<p>
+<p data-en="The application must specify key events and deadlines. State law permits the study period to be as long as three years and requires time for State agencies to review the commission's report." data-es="La solicitud debe especificar los principales eventos y plazos. La ley estatal permite que el período de estudio dure hasta tres años y exige tiempo para que las agencias estatales revisen el informe de la comisión." data-i18n="t64">
 The application must specify key events and deadlines. State law permits the
 study period to be as long as three years and requires time for State agencies
 to review the commission's report.
 </p>
-
-<p>
+<p data-en="The actual timetable proposed for Collingswood, Oaklyn and Woodlynne would be established in the application submitted to the Local Finance Board." data-es="El calendario concreto propuesto para Collingswood, Oaklyn y Woodlynne se establecería en la solicitud presentada a la Junta de Finanzas Locales." data-i18n="t65">
 The actual timetable proposed for Collingswood, Oaklyn and Woodlynne would be
 established in the application submitted to the Local Finance Board.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>12. What happens when the study is finished?</summary>
+<summary data-en="12. What happens when the study is finished?" data-es="12. ¿Qué sucede cuando termina el estudio?" data-i18n="t66">12. What happens when the study is finished?</summary>
 <div class="answer">
-
-<p>
+<p data-en="The commission issues its findings and recommendations. A study recommending consolidation does not, by itself, merge the municipalities." data-es="La comisión publica sus conclusiones y recomendaciones. Un estudio que recomiende la consolidación no fusiona, por sí mismo, los municipios." data-i18n="t67">
 The commission issues its findings and recommendations. A study recommending
 consolidation does not, by itself, merge the municipalities.
 </p>
-
-<p>
+<p data-en="The original application must specify how any proposed consolidation plan would ultimately be approved. New Jersey's Local Option law allows that approval process to involve a voter referendum, approval by the municipal governing bodies, or both." data-es="La solicitud original debe especificar cómo se aprobaría finalmente cualquier plan de consolidación propuesto. La ley de Opción Local de Nueva Jersey permite que ese proceso de aprobación incluya un referéndum de los votantes, la aprobación de los órganos de gobierno municipales o ambos." data-i18n="t68">
 The original application must specify how any proposed consolidation plan
 would ultimately be approved. New Jersey's Local Option law allows that
 approval process to involve a voter referendum, approval by the municipal
 governing bodies, or both.
 </p>
-
-<p>
+<p data-en="That means the rules for any eventual decision about actual consolidation are established as part of the study process rather than being decided only after the study is complete." data-es="Esto significa que las reglas para cualquier decisión futura sobre una consolidación real se establecen como parte del proceso de estudio, en lugar de decidirse únicamente después de que finalice el estudio." data-i18n="t69">
 That means the rules for any eventual decision about actual consolidation are
 established as part of the study process rather than being decided only after
 the study is complete.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>13. Why these three towns?</summary>
+<summary data-en="13. Why these three towns?" data-es="13. ¿Por qué estos tres municipios?" data-i18n="t70">13. Why these three towns?</summary>
 <div class="answer">
-
-<p>
+<p data-en="Collingswood, Oaklyn and Woodlynne are neighboring Camden County communities with existing connections, including established relationships among their school systems." data-es="Collingswood, Oaklyn y Woodlynne son comunidades vecinas del condado de Camden con conexiones existentes, incluidas relaciones establecidas entre sus sistemas escolares." data-i18n="t71">
 Collingswood, Oaklyn and Woodlynne are neighboring Camden County communities
 with existing connections, including established relationships among their
 school systems.
 </p>
-
-<p>
+<p data-en="Whether those connections are sufficient to make municipal consolidation practical is precisely the type of question a formal study could examine." data-es="Determinar si esas conexiones son suficientes para que la consolidación municipal sea práctica es precisamente el tipo de cuestión que podría examinar un estudio formal." data-i18n="t72">
 Whether those connections are sufficient to make municipal consolidation
 practical is precisely the type of question a formal study could examine.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>14. Does supporting the study mean supporting consolidation?</summary>
+<summary data-en="14. Does supporting the study mean supporting consolidation?" data-es="14. ¿Apoyar el estudio significa apoyar la consolidación?" data-i18n="t73">14. Does supporting the study mean supporting consolidation?</summary>
 <div class="answer">
-
-<p>No.</p>
-
-<p>
-A resident can believe consolidation deserves serious investigation without
-having decided whether consolidation itself is desirable.
-</p>
-
-<p>
+<p data-en="Supporting the study means supporting a formal examination of municipal consolidation, not approving consolidation itself." data-es="Apoyar el estudio significa apoyar un examen formal de la consolidación municipal, no aprobar la consolidación en sí." data-i18n="t74">Supporting the study means supporting a formal examination of municipal consolidation, not approving consolidation itself.</p>
+<p data-en="The study process is intended to produce information residents and local officials can use when considering any later proposal. Any proposal resulting from the study would require the separate approval process specified in the application." data-es="El proceso de estudio tiene como objetivo producir información que los residentes y funcionarios locales puedan utilizar al considerar cualquier propuesta posterior. Cualquier propuesta resultante del estudio requeriría el proceso de aprobación separado especificado en la solicitud." data-i18n="t75">
 The study process is intended to produce information residents and local
-officials can use when considering that later decision.
+officials can use when considering any later proposal. Any proposal resulting
+from the study would require the separate approval process specified in the application.
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>15. Who is behind Study Your Towns?</summary>
+<summary data-en="15. Who is behind Study Your Towns?" data-es="15. ¿Quién está detrás de Study Your Towns?" data-i18n="t76">15. Who is behind Study Your Towns?</summary>
 <div class="answer">
-
-<p>
+<p data-en="Study Your Towns is an independent resident-led project. It is not an official project of Collingswood, Oaklyn, Woodlynne, their school districts, Camden County or the State of New Jersey." data-es="Study Your Towns es un proyecto independiente liderado por residentes. No es un proyecto oficial de Collingswood, Oaklyn, Woodlynne, sus distritos escolares, el condado de Camden ni el Estado de Nueva Jersey." data-i18n="t77">
 Study Your Towns is an independent resident-led project. It is not an official
 project of Collingswood, Oaklyn, Woodlynne, their school districts, Camden
 County or the State of New Jersey.
 </p>
-
-<p>
+<p data-en="Its purpose is to provide information about the consolidation-study process and encourage public examination of the issue." data-es="Su propósito es proporcionar información sobre el proceso de estudio de consolidación y fomentar el análisis público del tema." data-i18n="t78">
 Its purpose is to provide information about the consolidation-study process
 and encourage public examination of the issue.
 </p>
-
 <p>
 Questions or interested in getting involved?
 <a href="mailto:studyourtowns@gmail.com">studyourtowns@gmail.com</a>
 </p>
-
 </div>
 </details>
-
-
 <details>
-<summary>16. Where can I read the law myself?</summary>
+<summary data-en="16. Where can I read the law myself?" data-es="16. ¿Dónde puedo consultar la ley?" data-i18n="t79">16. Where can I read the law myself?</summary>
 <div class="answer">
-
-<p>
+<p data-en="The process described on this website is the Local Option Municipal Consolidation process contained in N.J.S.A. 40A:65-25 through 40A:65-29." data-es="El proceso descrito en este sitio web es el proceso de Consolidación Municipal por Opción Local establecido en N.J.S.A. 40A:65-25 a 40A:65-29." data-i18n="t80">
 The process described on this website is the Local Option Municipal
 Consolidation process contained in N.J.S.A. 40A:65-25 through 40A:65-29.
 </p>
-
-<p>
+<p data-en="The New Jersey Department of Community Affairs publishes the Uniform Shared Services and Consolidation Act, which contains these provisions." data-es="El Departamento de Asuntos Comunitarios de Nueva Jersey publica la Ley Uniforme de Servicios Compartidos y Consolidación, que contiene estas disposiciones." data-i18n="t81">
 The New Jersey Department of Community Affairs publishes the Uniform Shared
 Services and Consolidation Act, which contains these provisions.
 </p>
-
-<p>
-<a href="https://www.nj.gov/dca/divisions/dlgs/programs/shared_docs/Reference%20-%20Uniform%20Shared%20Services%20and%20Consolidation%20Act.pdf"
-target="_blank" rel="noopener">
+<p data-en="Read the NJ Uniform Shared Services and Consolidation Act" data-es="Leer la Ley Uniforme de Servicios Compartidos y Consolidación de NJ" data-i18n="t82">
+<a data-en="Read the NJ Uniform Shared Services and Consolidation Act" data-es="Leer la Ley Uniforme de Servicios Compartidos y Consolidación de NJ" data-i18n="t83" href="https://www.nj.gov/dca/divisions/dlgs/programs/shared_docs/Reference%20-%20Uniform%20Shared%20Services%20and%20Consolidation%20Act.pdf" rel="noopener" target="_blank">
 Read the NJ Uniform Shared Services and Consolidation Act
 </a>
 </p>
-
 </div>
 </details>
-
-
 </div>
 </section>
-
-
 <section class="process" id="process">
-
-<h2 class="section-title">How the Local Option Study Process Works</h2>
+<h2 class="section-title" data-en="How the Local Option Study Process Works" data-es="Cómo funciona el proceso de estudio de Opción Local" data-i18n="t84">How the Local Option Study Process Works</h2>
 <div class="section-line"></div>
-
-<p class="intro">
+<p class="intro" data-en="New Jersey's Local Option process allows residents to petition the Local Finance Board directly for creation of a Municipal Consolidation Study Commission. The petition supports conducting a formal study. It does not itself merge the municipalities or approve a consolidation plan." data-es="El proceso de Opción Local de Nueva Jersey permite que los residentes soliciten directamente a la Junta de Finanzas Locales la creación de una Comisión de Estudio de Consolidación Municipal. La petición apoya la realización de un estudio formal. No consolida por sí misma los municipios ni aprueba un plan de consolidación." data-i18n="t85">
 New Jersey's Local Option process allows residents to petition the Local
 Finance Board directly for creation of a Municipal Consolidation Study
-Commission. The petition does not itself merge the municipalities.
+Commission. The petition supports conducting a formal study. It does not itself merge the municipalities or approve a consolidation plan.
 </p>
-
-
 <div class="steps">
-
 <div class="step">
 <div class="step-number">1</div>
-<h3>Petition</h3>
-<p>
+<h3 data-en="Petition" data-es="Petición" data-i18n="t86">Petition</h3>
+<p data-en="A representative committee of registered voters collects the signatures required by New Jersey law." data-es="Un comité representativo de votantes registrados reúne las firmas exigidas por la ley de Nueva Jersey." data-i18n="t87">
 A representative committee of registered voters collects the signatures
 required by New Jersey law.
 </p>
 </div>
-
-
 <div class="step">
 <div class="step-number">2</div>
-<h3>Apply to the State</h3>
-<p>
+<h3 data-en="Apply to the State" data-es="Solicitud al Estado" data-i18n="t88">Apply to the State</h3>
+<p data-en="The committee petitions the New Jersey Local Finance Board to create a Municipal Consolidation Study Commission and proposes how the study would be conducted." data-es="El comité solicita a la Junta de Finanzas Locales de Nueva Jersey que cree una Comisión de Estudio de Consolidación Municipal y propone cómo se realizaría el estudio." data-i18n="t89">
 The committee petitions the New Jersey Local Finance Board to create a
 Municipal Consolidation Study Commission and proposes how the study would be
 conducted.
 </p>
 </div>
-
-
 <div class="step">
 <div class="step-number">3</div>
-<h3>Public Hearings</h3>
-<p>
+<h3 data-en="Public Hearings" data-es="Audiencias públicas" data-i18n="t90">Public Hearings</h3>
+<p data-en="Public hearings are held in each participating municipality and at a joint hearing before the Local Finance Board acts on the application." data-es="Se celebran audiencias públicas en cada municipio participante y una audiencia conjunta antes de que la Junta de Finanzas Locales actúe sobre la solicitud." data-i18n="t91">
 Public hearings are held in each participating municipality and at a joint
 hearing before the Local Finance Board acts on the application.
 </p>
 </div>
-
-
 <div class="step">
 <div class="step-number">4</div>
-<h3>Study</h3>
-<p>
+<h3 data-en="Study" data-es="Estudio" data-i18n="t92">Study</h3>
+<p data-en="If approved, the commission studies finances, taxes, schools, debt, state aid, employees, services, facilities and other consequences of consolidation." data-es="Si se aprueba, la comisión estudia las finanzas, los impuestos, la deuda, la ayuda estatal, los empleados, los servicios, las instalaciones y otras consecuencias de la consolidación, además de las cuestiones educativas si estas se incluyen formalmente en el alcance del estudio." data-i18n="t93">
 If approved, the commission studies finances, taxes, schools, debt, state
 aid, employees, services, facilities and other consequences of
 consolidation.
 </p>
 </div>
-
-
 <div class="step">
 <div class="step-number">5</div>
-<h3>Results</h3>
-<p>
+<h3 data-en="Results" data-es="Resultados" data-i18n="t94">Results</h3>
+<p data-en="The commission publishes its findings and any proposed consolidation plan. Any actual consolidation would then have to be approved through the method specified in the approved application." data-es="La comisión publica sus conclusiones y cualquier plan de consolidación propuesto. Cualquier consolidación efectiva tendría que aprobarse posteriormente mediante el método especificado en la solicitud aprobada." data-i18n="t95">
 The commission publishes its findings and any proposed consolidation plan.
 Any actual consolidation would then have to be approved through the method
 specified in the approved application.
 </p>
 </div>
-
 </div>
-
-
 <div class="callout" id="why">
-
-<h2>What does signing the petition actually do?</h2>
-
-<p>
+<h2 data-en="What does signing the petition actually do?" data-es="¿Qué hace realmente la firma de la petición?" data-i18n="t96">What does signing the petition actually do?</h2>
+<p data-en="It asks the New Jersey Local Finance Board to authorize a formal study of whether consolidating Collingswood, Oaklyn and Woodlynne makes sense." data-es="Solicita a la Junta de Finanzas Locales de Nueva Jersey que autorice un estudio formal para determinar si tiene sentido consolidar Collingswood, Oaklyn y Woodlynne." data-i18n="t97">
 It asks the New Jersey Local Finance Board to authorize a formal study of
 whether consolidating Collingswood, Oaklyn and Woodlynne makes sense.
 </p>
-
-<p>
+<p data-en="It does not merge the towns. It does not approve a consolidation plan. It begins the process of examining the actual numbers and consequences." data-es="No consolida los municipios. No aprueba un plan de consolidación. Inicia el proceso de examinar los datos y las consecuencias reales." data-i18n="t98">
 It does not merge the towns. It does not approve a consolidation plan.
 It begins the process of examining the actual numbers and consequences.
 </p>
-
-<p>
+<p data-en="Could one municipal government cost less than three? How would property taxes change in each town? Could school administration or facilities be organized differently? What would happen to state aid and existing debt? Would services improve, decline or remain essentially the same?" data-es="¿Podría un solo gobierno municipal costar menos que tres? ¿Cómo cambiarían los impuestos sobre la propiedad en cada municipio? Si las cuestiones escolares se incluyeran en el estudio, ¿podrían organizarse de otra manera la administración o las instalaciones? ¿Qué ocurriría con la ayuda estatal y la deuda existente? ¿Mejorarían, disminuirían o permanecerían esencialmente iguales los servicios?" data-i18n="t99">
 Could one municipal government cost less than three? How would property taxes
 change in each town? Could school administration or facilities be organized
 differently? What would happen to state aid and existing debt? Would services
 improve, decline or remain essentially the same?
 </p>
-
-<p>
+<p data-en="The Municipal Consolidation Study Commission would be created to investigate questions like these." data-es="La Comisión de Estudio de Consolidación Municipal se crearía para investigar preguntas como estas." data-i18n="t100">
 The Municipal Consolidation Study Commission would be created to investigate
 questions like these.
 </p>
-
-<p>
-<strong>
-Signing the petition means supporting a formal study, not committing to
-consolidation.
+<p data-en="Signing the petition supports conducting a formal study of municipal consolidation. It does not determine whether consolidation will occur. Any proposal resulting from the study would require a separate approval process." data-es="Firmar la petición apoya la realización de un estudio formal sobre la consolidación municipal. No determina si la consolidación ocurrirá. Cualquier propuesta resultante del estudio requeriría un proceso de aprobación separado." data-i18n="t101">
+<strong data-en="Signing the petition supports conducting a formal study of municipal consolidation. It does not determine whether consolidation will occur. Any proposal resulting from the study would require a separate approval process." data-es="Firmar la petición apoya la realización de un estudio formal sobre la consolidación municipal. No determina si la consolidación ocurrirá. Cualquier propuesta resultante del estudio requeriría un proceso de aprobación separado." data-i18n="t102">
+Signing the petition supports conducting a formal study of municipal consolidation. It does not determine whether consolidation will occur. Any proposal resulting from the study would require a separate approval process.
 </strong>
 </p>
-
 </div>
-
 </section>
-
-
 <section class="sources" id="sources">
-
-<h2 class="section-title">NJ Law & Sources</h2>
+<h2 class="section-title" data-en="NJ Law &amp; Sources" data-es="Ley de NJ y fuentes" data-i18n="t103">NJ Law &amp; Sources</h2>
 <div class="section-line"></div>
-
-<p class="intro">
+<p class="intro" data-en="Read the underlying state materials and reach your own conclusions." data-es="Consulte los materiales estatales originales y llegue a sus propias conclusiones." data-i18n="t104">
 Read the underlying state materials and reach your own conclusions.
 </p>
-
 <div class="source-box">
-
-<h3>New Jersey Department of Community Affairs</h3>
-
-<p>
+<h3 data-en="New Jersey Department of Community Affairs" data-es="Departamento de Asuntos Comunitarios de Nueva Jersey" data-i18n="t105">New Jersey Department of Community Affairs</h3>
+<p data-en="The resident-led process described on this website is the Local Option Municipal Consolidation process established by N.J.S.A. 40A:65-25 through 40A:65-29." data-es="El proceso liderado por residentes descrito en este sitio web es el proceso de Consolidación Municipal por Opción Local establecido por N.J.S.A. 40A:65-25 a 40A:65-29." data-i18n="t106">
 The resident-led process described on this website is the Local Option
 Municipal Consolidation process established by N.J.S.A. 40A:65-25 through
 40A:65-29.
 </p>
-
-<p>
-<a href="https://www.nj.gov/dca/divisions/dlgs/programs/shared_docs/Reference%20-%20Uniform%20Shared%20Services%20and%20Consolidation%20Act.pdf"
-target="_blank" rel="noopener">
+<p data-en="NJ Uniform Shared Services and Consolidation Act" data-es="Ley Uniforme de Servicios Compartidos y Consolidación de NJ" data-i18n="t107">
+<a data-en="NJ Uniform Shared Services and Consolidation Act" data-es="Ley Uniforme de Servicios Compartidos y Consolidación de NJ" data-i18n="t108" href="https://www.nj.gov/dca/divisions/dlgs/programs/shared_docs/Reference%20-%20Uniform%20Shared%20Services%20and%20Consolidation%20Act.pdf" rel="noopener" target="_blank">
 NJ Uniform Shared Services and Consolidation Act
 </a>
 </p>
-
-<p>
-<a href="https://www.nj.gov/dca/dlgs/misc_docs/Reference%20-%20Municipal%20Consolidation%20Statutes%20-%20July%202019.pdf"
-target="_blank" rel="noopener">
+<p data-en="NJ Municipal Consolidation Statutes Reference" data-es="Referencia de estatutos de consolidación municipal de NJ" data-i18n="t109">
+<a data-en="NJ Municipal Consolidation Statutes Reference" data-es="Referencia de estatutos de consolidación municipal de NJ" data-i18n="t110" href="https://www.nj.gov/dca/dlgs/misc_docs/Reference%20-%20Municipal%20Consolidation%20Statutes%20-%20July%202019.pdf" rel="noopener" target="_blank">
 NJ Municipal Consolidation Statutes Reference
 </a>
 </p>
-
 </div>
-
 </section>
-
 </main>
-
-
 <footer>
-
 <p><strong>Study Your Towns</strong></p>
-
-<p>
+<p data-en="Exploring the Local Option municipal consolidation study process for Collingswood, Oaklyn and Woodlynne, New Jersey." data-es="Explorando el proceso de estudio de consolidación municipal por Opción Local para Collingswood, Oaklyn y Woodlynne, Nueva Jersey." data-i18n="t111">
 Exploring the Local Option municipal consolidation study process for
 Collingswood, Oaklyn and Woodlynne, New Jersey.
 </p>
-
 <p>
-Questions, comments, or interested in getting involved?<br>
+Questions, comments, or interested in getting involved?<br/>
 <a href="mailto:studyourtowns@gmail.com">studyourtowns@gmail.com</a>
 </p>
-
-<p>
+<p data-en="Independent resident-led project. Not affiliated with the municipalities, school districts, Camden County or the State of New Jersey." data-es="Proyecto independiente liderado por residentes. No está afiliado con los municipios, los distritos escolares, el condado de Camden ni el Estado de Nueva Jersey." data-i18n="t112">
 Independent resident-led project. Not affiliated with the municipalities,
 school districts, Camden County or the State of New Jersey.
 </p>
-
 </footer>
+<script>
+function setLanguage(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var value = el.getAttribute('data-' + lang);
+    if (value !== null) el.textContent = value;
+  });
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+  document.getElementById('lang-en').setAttribute('aria-pressed', lang === 'en');
+  document.getElementById('lang-es').setAttribute('aria-pressed', lang === 'es');
+  try { localStorage.setItem('studyYourTownsLanguage', lang); } catch(e) {}
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var saved = 'en';
+  try { saved = localStorage.getItem('studyYourTownsLanguage') || 'en'; } catch(e) {}
+  setLanguage(saved === 'es' ? 'es' : 'en');
+});
 
-</body>
+// Keep the browser title meaningful in either language.
+var _setLanguage=setLanguage; setLanguage=function(lang){ _setLanguage(lang); document.title = lang==='es' ? 'Study Your Towns | Collingswood, Oaklyn y Woodlynne' : 'Study Your Towns | Collingswood, Oaklyn & Woodlynne'; };
+</script></body>
 </html>
